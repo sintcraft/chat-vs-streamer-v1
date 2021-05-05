@@ -1,3 +1,27 @@
 {
-    "messageRewarType": "${user} gasto ${price} "
+    "messageRewarType": "${user} gasto ${price} en ${rewardName}",
+    "messageError": "Susedio un error ${error}",
+    "streamer": "sintcraft",
+    "prices": {
+        "bits": [
+            {
+                "price": 10,
+                "action": "/give ${streamer} sand 64"
+            },
+            {
+                "price": 10,
+                "action": "/give ${streamer} grass_block 64"
+            }
+        ],
+        "channelPoints": [
+            {
+                "id": "your id reward",
+                "action": "/give ${streamer} stone 64"
+            },
+            {
+                "id": "your id reward",
+                "action": "/give ${streamer} golden_aple 3"
+            }
+        ]
+    }
 }
