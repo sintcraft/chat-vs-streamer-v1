@@ -15,12 +15,85 @@
         ],
         "channelPoints": [
             {
-                "id": "your id reward",
-                "action": "/give ${streamer} stone 64"
+                "id": "9b1db763-6321-47ed-86bf-cf690af598ac",
+                "name": "pan",
+                "action": "/give ${streamer} minecraft:bread 1"
             },
             {
-                "id": "your id reward",
-                "action": "/give ${streamer} golden_aple 3"
+                "id": "3e8838dc-d100-4a6c-9db1-a4cdb8d5a5a1",
+                "name": "Zombie",
+                "action": "/execute positioned as ${streamer} run summon minecraft:zombie"
+            },
+            {
+                "id": "4d1347b3-3a51-4c6e-8441-ddcbef556933",
+                "name": "Zanahoria de oro",
+                "action": "/give sintcraft minecraft:golden_carrot 1"
+            },
+            {
+                "id": "8d34caa2-8f1b-4009-bcd8-58a2929840ab",
+                "name": "Calamar",
+                "action": "/execute positioned as sintcraft run summon minecraft:squid"
+            },
+            {
+                "id": "10fd5d6c-ec02-430e-87b2-b94df957ab50",
+                "name": "Totem",
+                "action": "/give sintcraft minecraft:totem_of_undying 1"
+            },
+            {
+                "id": "50c11296-b672-4a7f-8592-87c91851f0e1",
+                "name": "Esqueleto",
+                "action": "/execute positioned as sintcraft run summon minecraft:skeleton"
+            },
+            {
+                "id": "7fea281b-2b98-46de-813f-ce207f41a31e",
+                "name": "Water drop (85)",
+                "actions": [
+                    "/execute positioned as sintcraft run tp sintcraft ~ 85 ~",
+                    "/give sintcraft minecraft:water_bucket 1"
+                ]
+            },
+            {
+                "id": "d289a614-01c5-4bd8-b4ff-7b91ca0d9ad6",
+                "name": "Araña",
+                "action": "/execute positioned as sintcraft run summon minecraft:spider"
+            },
+            {
+                "id": "1711a94c-e709-4e52-bb58-bcf9bfa9236d",
+                "name": "Araña de cueva",
+                "action": "/execute positioned as sintcraft run summon minecraft:cave_spider"
+            },
+            {
+                "id": "f0e662ca-ad9b-42e9-9e41-0b5eaf9bb9ca",
+                "name": "Creeper",
+                "action": "/execute positioned as sintcraft run summon minecraft:creeper"
+            },
+            {
+                "id": "87da5839-1b40-4fab-94d0-4087a921a3fe",
+                "name": "pigman",
+                "action": "/execute positioned as sintcraft run summon minecraft:zombified_piglin"
+            },
+            {
+                "id": "b42a384f-3124-46f1-8e3c-888b2588226a",
+                "name": "Creeper electrico",
+                "action": "/execute positioned as sintcraft run summon minecraft:creeper ~ ~ ~ {powered:1}"
+            },
+            {
+                "id": "ba8e815a-3eb7-4c6f-87b3-d54e466135fb",
+                "name": "Wither skeleton",
+                "action": "/execute positioned as sintcraft run summon minecraft:wither_skeleton"
+            },
+            {
+                "id": "d36c2595-a62d-4adc-9b9f-f3e144e13a4d",
+                "name": "Water drop (120)",
+                "actions": [
+                    "/execute positioned as sintcraft run tp sintcraft ~ 120 ~",
+                    "/give sintcraft minecraft:water_bucket 1"
+                ]
+            },
+            {
+                "id": "52e84123-bf52-4893-a82d-020f64735656",
+                "name": "Ravager",
+                "action": "/execute positioned as sintcraft run summon minecraft:ravager"
             }
         ]
     }

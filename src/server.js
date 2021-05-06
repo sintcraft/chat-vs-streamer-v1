@@ -1,16 +1,14 @@
 const express = require('express')
 const app = express()
 const tmi = require('tmi.js')
-const opts = {
-    
-}
+const config = require('./util').getConfig()
 const bot = new tmi.Client({
     identity: {
         username: process.env.clientUser,
         password: process.env.clientToken,
       },
       channels: [
-        process.env.clientUser
+        config.streamer
       ]
 })
 
