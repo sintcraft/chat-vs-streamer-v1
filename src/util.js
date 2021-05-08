@@ -29,5 +29,6 @@ module.exports = {
         for(let action of data){
             BotMc.chat(action.cmd)
         }
+        this.clearActions()
     }
 }
