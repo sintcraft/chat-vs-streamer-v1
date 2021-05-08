@@ -14,7 +14,11 @@ module.exports = async (TwitchClient, io, BotMc, channel, context, msg, self) =>
                 }else{
                     util.saveAction({
                         msg,
-                        action: reward.action
+                        action: reward.action,
+                        user: context.username,
+                        name: reward.name,
+                        status: 'reward',
+                        cant: 0
                     })
                 }
             }else{if(util.getEnabledSystem()){
@@ -27,7 +31,11 @@ module.exports = async (TwitchClient, io, BotMc, channel, context, msg, self) =>
                     }else{
                         util.saveAction({
                             msg,
-                            action: reward.actions[i]
+                            action: reward.actions[i],
+                            user: context.username,
+                            name: reward.name,
+                            status: 'reward',
+                            cant: 0
                         })
                     }
                 }

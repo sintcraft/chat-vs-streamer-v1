@@ -24,6 +24,7 @@ const BotMc = mineflayer.createBot({
 const Router = require('./router')
 const rewards = require('./events/twitch/rewards')
 const ready = require('./events/twitch/ready')
+const bits = require('./events/twitch/cheer')
 const McLogin = require('./events/MC/login')
 const util = require('./util')
 const { getEnabledSystem } = require('./util')
@@ -58,6 +59,7 @@ io.on('connection', function(socket){
 // Eventos
 bot.on('chat', rewards.bind(null, bot, io, BotMc))
 bot.on('connected', ready.bind(null, bot))
+bot.on('cheer', bits.bind(null, bot, BotMc))
 
 BotMc.on('login', McLogin.bind(null, BotMc))
 BotMc.on('chat', async(username, msg) => {

@@ -6,12 +6,39 @@
     "prices": {
         "bits": [
             {
-                "price": 10,
-                "action": "/give ${streamer} sand 64"
+                "price": 1,
+                "action": "/execute positioned as ${streamer} run summon minecraft:slime ~ ~ ~ {Size:2}",
+                "name": " Darmek"
             },
             {
-                "price": 10,
-                "action": "/give ${streamer} grass_block 64"
+                "price": 2,
+                "action": "/execute positioned as ${streamer} run summon minecraft:cat ~ ~ ~ {CollarColor:2}",
+                "name": "a Onicks"
+            },
+            {
+                "price": 4,
+                "action": "/execute positioned as ${streamer} run summon minecraft:vex ~ ~ ~",
+                "name": " ascesino serial :PeepoCuchillo:"
+            },
+            {
+                "price": 5,
+                "action": "/execute positioned as ${streamer} run summon minecraft:wither_skeleton ~ ~ ~ {HandItems:[{id:iron_sword,Count:1}],ArmorItems:[{},{},{id:diamond_chestplate,Count:1}],HandDropChances:[0F],ArmorDropChances:[0F,0F,0F]}",
+                "name": " rich 1min despues de iniciar"
+            },
+            {
+                "price": 6,
+                "action": "/execute positioned as ${streamer} run summon minecraft:vex ~ ~ ~",
+                "name": " ascesino serial :PeepoCuchillo:"
+            },
+            {
+                "price": 7,
+                "action": "/execute positioned as ${streamer} run summon minecraft:vex ~ ~ ~",
+                "name": " ascesino serial :PeepoCuchillo:"
+            },
+            {
+                "price": 8,
+                "action": "/execute positioned as ${streamer} run summon minecraft:vex ~ ~ ~",
+                "name": " ascesino serial :PeepoCuchillo:"
             }
         ],
         "channelPoints": [

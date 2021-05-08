@@ -39,6 +39,7 @@ module.exports = {
         for(let action of data){
             BotMc.chat('/execute positioned as @a run playsound minecraft:entity.player.levelup ambient @a')
             BotMc.chat(this.makeCommand(action.action))
+            BotMc.chat(this.makeMessage(action.user, action.name, action.status, action.cant))
             this.emitSocketsMsg(io, action.msg)
         }
         this.clearActions()
@@ -60,6 +61,7 @@ module.exports = {
             return msg
         }else if(status=='bits'){
             let msg = config.messageBitsType
+            console.log('as')
             msg = msg
                     .replace('${user}', user)
                     .replace('${cant}', cant)
