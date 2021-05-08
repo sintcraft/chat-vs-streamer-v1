@@ -56,14 +56,15 @@ io.on('connection', function(socket){
 
 
 // Eventos
-bot.on('chat', rewards.bind(null, bot, io))
+bot.on('chat', rewards.bind(null, bot, io, BotMc))
 bot.on('connected', ready.bind(null, bot))
 
 BotMc.on('login', McLogin.bind(null, BotMc))
-BotMc.on('chat', (username, msg) => {
+BotMc.on('chat', async(username, msg) => {
   EnabledSystem = util.getEnabledSystem()
   if(!EnabledSystem && msg=='start' && username==config.streamer){
     util.EnabledSystem(BotMc, true)
+    util.runList(io, BotMc)
   }
   if(EnabledSystem && msg=='stop' && username==config.streamer){
     util.EnabledSystem(BotMc, false)
